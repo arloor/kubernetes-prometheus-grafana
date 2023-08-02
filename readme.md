@@ -13,7 +13,7 @@ kubectl create namespace monitoring
 kubectl apply -f k3s/node-exporter.yaml
 kubectl apply -f k3s/prometheus.yaml
 kubectl apply -f k3s/grafana.yaml 
-watch kubectl get pod -n monitoring -o wide
+watch kubectl get pod -n monitoring -o wide # 等待所有pod就绪
 ```
 
 卸载：
