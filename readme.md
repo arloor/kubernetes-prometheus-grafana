@@ -22,6 +22,8 @@ watch kubectl get pod -n monitoring -o wide
 kubectl delete namespace monitoring
 ```
 
+整个过程中涉及的知识点解析：[K8S RBAC、Promethues服务发现、Prometheus Relabel configs](https://www.arloor.com/posts/k8s-rbac-prometheus-sd-relabel-config/)
+
 ### node-exporter
 
 node-exporter用来获取机器指标，包括CPU、内存、磁盘、网络等，并将这些指标暴露在 `/metrics` 上，供prometheus抓取。
