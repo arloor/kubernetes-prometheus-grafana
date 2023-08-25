@@ -43,13 +43,16 @@ PS：这里使用hostNetwork来监控Host的网络堆栈。
 
 ### grafana
 
-为了将grafana暴露到公网，Service的Type为LoadBalancer。如果K8S集群没有LoadBalancer实现的话，可以改成NodePort，或者Deployment中使用hostPort或hostNetwork。
+为了将grafana暴露到公网，Service的Type为LoadBalancer。
+
+如果K8S集群没有LoadBalancer实现的话，可以改成NodePort，或者Deployment中使用hostPort或hostNetwork。
 
 端口是3000，默认用户名密码是admin。设置datasource为 http://prometheus-service.monitoring:9090 。
 
-推荐的grafana大盘模版：https://grafana.com/grafana/dashboards/1860-node-exporter-full/。在新建大盘时选择import，并输入1860即可。
+推荐的grafana大盘模版：在新建大盘时选择import，并输入下面的id即可。 
 
-还有概览页大盘模版：[overview.json](./overview.json)
+1. 19397
+2. 1860
 
 效果图：
 
