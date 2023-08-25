@@ -51,8 +51,8 @@ PS：这里使用hostNetwork来监控Host的网络堆栈。
 
 推荐的grafana大盘模版：在新建大盘时选择import，并输入下面的id即可。 
 
-1. 19397
-2. 1860
+1. https://grafana.com/grafana/dashboards/19397-overview
+2. https://grafana.com/grafana/dashboards/1860-node-exporter-full
 
 效果图：
 
