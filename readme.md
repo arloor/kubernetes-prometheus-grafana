@@ -53,7 +53,7 @@ PS：这里使用hostNetwork来监控Host的网络堆栈。
 
 1. https://grafana.com/grafana/dashboards/19397-overview
 2. https://grafana.com/grafana/dashboards/1860-node-exporter-full
-3. 19471
+3. 20025
 
 效果图：
 
